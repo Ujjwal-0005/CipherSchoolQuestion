@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Input Display</title>
+</head>
+<body>
+
+  <h2>Type something and click the button</h2>
+
+  <input type="text" id="userInput" placeholder="Enter some text">
+  <button onclick="updateText()">Show Text</button>
+
+  <p id="output">Your text will appear here.</p>
+
+  <script>
+    function updateText() {
+      const input = document.getElementById("userInput").value;
+      document.getElementById("output").textContent = input;
+    }
+  </script>
+
+</body>
+</html>
